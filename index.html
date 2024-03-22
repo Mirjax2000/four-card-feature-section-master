@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>social-links-profile</title>
+        <title>Four-card-feature</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- zadej popis stranky -->
         <meta name="description" content="" />
@@ -28,59 +28,84 @@
             href="./favicon-32x32.webp"
             type="image/x-icon"
         />
-        <!-- preload img for java -->
+        <!-- preload img for javascript -->
         <!-- <link rel="preload" href="hero.jpg" as="image" fetchpriority="high"> -->
     </head>
 
     <body class="home">
-        <main class="container">
-            <div class="card">
-                <picture class="card__picture">
-                    <source
-                        media="(max-width: 650px)"
-                        type="image/webp"
-                        width="343"
-                        height="240"
-                        sizes="(min-width:343px) 343px, 100vw"
-                        srcset="
-                            ./assets/img/mobile-343.webp 343w,
-                            ./assets/img/mobile-686.webp 686w
-                        "
-                    />
-                    <img
-                        src="./assets/img/desktop-300.webp"
-                        width="300"
-                        height="450"
-                        sizes="(min-width:650px) 300px, 50vw"
-                        srcset="
-                            ./assets/img/desktop-300.webp 300w,
-                            ./assets/img/desktop-600.webp 600w
-                        "
-                        decoding="async"
-                        loading="eager"
-                        title="parfum bottle"
-                        alt="parfum bottle"
-                    />
-                </picture>
+        <div class="container">
+            <header>
+                <h1>Reliable, efficient delivery</h1>
+                <h2>Powered by Technology</h2>
+                <p>
+                    Our Artificial Intelligence powered tools use millions of
+                    project data points to ensure that your project is
+                    successful
+                </p>
+            </header>
 
-                <section class="card__content">
-                    <h2>PERFUME</h2>
-                    <h1>Gabrielle Essence Eau De Parfum</h1>
-                    <p>
-                        A floral, solar and voluptuous interpretation composed
-                        by Olivier Polge, Perfumer-Creator for the House of
-                        CHANEL.
-                    </p>
-                    <div class="price">
-                        <p class="price--new">$149.99</p>
-                        <p class="price--old">$169.99</p>
-                    </div>
-                    <div class="btn">
-                        <img src="./assets/img/icon-cart.svg" alt="cart" />
-                        <p>Add to Cart</p>
-                    </div>
+            <main class="grid">
+                <section class="left">
+                    <article class="card supervisor">
+                        <div class="card__container">
+                            <h3>Supervisor</h3>
+                            <p>
+                                Monitors activity to identify project roadblocks
+                            </p>
+                            <img
+                                src="./assets/img/icon-supervisor.svg"
+                                alt="eye looking at you through magnifier"
+                            />
+                        </div>
+                    </article>
                 </section>
-            </div>
-        </main>
+
+                <section class="middle">
+                    
+                    <article class="card teamBuilder">
+                        <div class="card__container">
+                            <h3>Team Builder</h>
+                            <p>
+                                Scans our talent network to create the optimal
+                                team for your project
+                            </p>
+                            
+                            <img
+                                src="./assets/img/icon-team-builder.svg"
+                                alt="Team builder scaning house for new talents"
+                            />
+                        </div>
+                    </article>
+
+                    <article class="card karma">
+                        <div class="card__container">
+                            <h3>Karma</h3>
+                            <p>
+                                Regularly evaluates our talent to ensure quality
+                            </p>
+                            <img
+                                src="./assets/img/icon-karma.svg"
+                                alt="yellow bulp for evaluation of talents"
+                            />
+                        </div>
+                    </article>
+                </section>
+
+                <section class="right">
+                    <article class="card calculator">
+                        <div class="card__container">
+                            <h3>Calculator</h3>
+                            <p>
+                                Regularly evaluates our talent to ensure quality
+                            </p>
+                            <img
+                                src="./assets/img/icon-calculator.svg"
+                                alt="some smart application"
+                            />
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
     </body>
 </html>

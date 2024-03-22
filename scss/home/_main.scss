@@ -8,103 +8,91 @@
 .home {
     font-optical-sizing: auto;
     background-color: $clr-bg-body;
-    height: 100svh;
-    @include flexCenter;
+    height: 100dvh;
+    // @include flexCenter;
+    font-family: $font-family-Poppins;
 }
 
 .container {
-    max-width: em(343, 16);
-    min-width: em(150, 16);
-    background-color: $clr-bg-container;
-    border-radius: em($br-card, 16);
-    overflow: hidden;
+    @include container(em(375, 14.4));
+    min-width: em(200, 14.4);
+    padding-block: em(85, 14.4) em(78, 14.4);
+    padding-inline: em(30, 14.4);
+    // background-color: rgb(223, 223, 223);
 }
 
-.card {
-    &__content {
-        padding: 0 em(24, 16) em(24, 16) em(24, 16);
-        font-family: $font-family-Montserrat;
+header {
+    text-align: center;
+    margin-bottom: em(76, 14.4);
 
-        h2 {
-            font-size: var(--H2); //12px
-            letter-spacing: em(5, 12);
-            line-height: em(15, 12);
-            color: $clr-txt-H2;
-            font-weight: 500;
+    h1 {
+        font-size: var(--H1); //24
+        letter-spacing: em(0.17, 24);
+        color: $clr-txt-H1;
+        font-weight: 200;
+        line-height: em(35, 24);
+    }
 
-            padding-block: em(24, 12) em(12, 12);
+    h2 {
+        font-size: var(--H2); //24
+        letter-spacing: em(0.17, 24);
+        color: $clr-txt-H2;
+        font-weight: 600;
+        line-height: em(36, 24);
+        margin-bottom: em(13, 24);
+    }
+
+    p {
+        font-size: var(--header-par); //15
+        letter-spacing: em(0.1, 15);
+        line-height: em(25, 15);
+        color: $clr-txt-header-par;
+        font-weight: 400;
+        opacity: 0.5;
+    }
+}
+
+.grid {
+    @each $name, $color in $cards-color {
+        .#{$name} {
+            border-top: em(5, 14.4) solid $color;
         }
-        h1 {
-            font-family: $font-family-Fraunces;
-            font-size: var(--H1); //32px
-            line-height: em(32, 32);
-            color: $clr-txt-H1;
-            font-weight: 700;
-        }
-        p:not(.price p, .btn p) {
-            font-size: var(--par); //14px
-            line-height: em(23, 14);
-            color: $clr-txt-p;
-            font-weight: 500;
-
-            margin-block: em(16, 14) em(24, 14);
-        }
-
-        .price {
-            display: flex;
-            align-items: center;
-            margin-bottom: em(20, 16);
-
-            .price--new {
-                font-family: $font-family-Fraunces;
-                font-size: var(--price-new); //32px
-                line-height: em(32, 32);
-                color: $clr-txt-price--new;
-                font-weight: 700;
-                margin-right: em(19, 32);
-            }
-            .price--old {
-                font-size: var(--price-old); //13px
-                color: $clr-txt-price--old;
-                line-height: em(23, 13);
-                font-weight: 500;
-                text-decoration: line-through;
-            }
+    }
+    .card {
+        .card__container {
+            padding: em(28, 14.4);
         }
 
-        .btn {
-            background-color: $clr-bg-card-btn;
-            border-radius: em($br-card, 16);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        text-align: right;
+        box-shadow: 0 em(15, 14.4) em(30, 14.4) em(-11, 14.4) $shadow-clr;
 
-            padding-block: em(15, 16);
-            cursor: pointer;
+        border-radius: em($br-card--mobile, 14.4);
+        margin-bottom: em(25, 14.4);
 
-            transition: ease-in-out 0.2s background-color;
-            &:hover,
-            &:focus {
-                background-color: $clr-bg-card-btn-hover;
-                img {
-                    background-color: $clr-bg-card-btn-hover;
-                }
-            }
+        & > * :not(img) {
+            text-align: left;
+        }
 
-            img {
-                transition: ease-in-out 0.2s background-color;
-                max-width: em(15, 16);
-                min-height: em(16, 16);
-                background-color: $clr-bg-card-btn;
-            }
+        h3 {
+            font-size: var(--H3); //20
+            line-height: em(30, 20);
+            color: $clr-txt-H3;
+            font-weight: 600;
+        }
 
-            p {
-                font-size: var(--btn); //14px
-                color: $clr-txt-btn;
-                line-height: em(17, 14);
-                font-weight: 700;
-                margin-left: em(11, 14);
-            }
+        p {
+            font-size: var(--card-par); //13
+            font-weight: 400;
+            line-height: em(23, 13);
+            letter-spacing: em(0.1, 13);
+            color: $clr-txt-card-par;
+            opacity: 0.5;
+        }
+
+        img {
+            background-color: $clr-bg-body;
+            max-width: em(57, 14.4);
+            aspect-ratio: 1/1;
         }
     }
 }

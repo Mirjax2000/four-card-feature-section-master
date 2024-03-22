@@ -88,30 +88,58 @@
 //     font-weight: 400;
 // }
 
-// Fraunces - 700
+// // Fraunces - 700
+// @font-face {
+//     font-family: 'Fraunces';
+//     src: url(../assets/webfonts/Font-face/Fraunces_144pt_SuperSoft-Bold.woff2)
+//             format('woff2'),
+//         url(../assets/webfonts/Font-face/Fraunces_144pt_SuperSoft-Bold.ttf)
+//             format('truetype');
+//     font-weight: 700;
+// }
+
+// // Montserrat - 500
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: url(../assets/webfonts/Font-face/Montserrat-Medium.woff2)
+//             format('woff2'),
+//         url(../assets/webfonts/Font-face/Montserrat-Medium.ttf)
+//             format('truetype');
+//     font-weight: 500;
+// }
+
+// // Montserrat - 700
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: url(../assets/webfonts/Font-face/Montserrat-Bold.woff2) format('woff2'),
+//         url(../assets/webfonts/Font-face/Montserrat-Bold.ttf) format('truetype');
+//     font-weight: 700;
+// }
+
+// Poppins - 200
 @font-face {
-    font-family: 'Fraunces';
-    src: url(../assets/webfonts/Font-face/Fraunces_144pt_SuperSoft-Bold.woff2)
+    font-family: 'Poppins';
+    src: url(../assets/webfonts/Font-face/Poppins-ExtraLight.woff2)
             format('woff2'),
-        url(../assets/webfonts/Font-face/Fraunces_144pt_SuperSoft-Bold.ttf)
+        url(../assets/webfonts/Font-face/Poppins-ExtraLight.ttf)
             format('truetype');
-    font-weight: 700;
+    font-weight: 200;
 }
 
-// Montserrat - 500
+// Poppins - 400
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../assets/webfonts/Font-face/Montserrat-Medium.woff2)
-            format('woff2'),
-        url(../assets/webfonts/Font-face/Montserrat-Medium.ttf)
-            format('truetype');
-    font-weight: 500;
+    font-family: 'Poppins';
+    src: url(../assets/webfonts/Font-face/Poppins-Regular.woff2) format('woff2'),
+        url(../assets/webfonts/Font-face/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
 }
 
-// Montserrat - 700
+// Poppins - 600
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../assets/webfonts/Font-face/Montserrat-Bold.woff2) format('woff2'),
-        url(../assets/webfonts/Font-face/Montserrat-Bold.ttf) format('truetype');
-    font-weight: 700;
+    font-family: 'Poppins';
+    src: url(../assets/webfonts/Font-face/Poppins-SemiBold.woff2)
+            format('woff2'),
+        url(../assets/webfonts/Font-face/Poppins-SemiBold.ttf)
+            format('truetype');
+    font-weight: 600;
 }
