@@ -1,0 +1,15 @@
+@use '../tools/' as *;
+
+// --------------------
+/*   --- root css --- */
+// --------------------
+
+:root {
+    --font-size: #{$font-size-100};
+    --H1: #{$H1--Mid};
+    --H2: #{$H2--Mid};
+    --price-new: #{$price-new--Mid};
+    --price-old: #{$price-old--Mid};
+    --par: #{$par--Mid};
+    --btn: #{$btn--Mid};
+}

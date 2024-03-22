@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>social-links-profile</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- zadej popis stranky -->
+        <meta name="description" content="" />
+        <!-- zadej klicova slova -->
+        <meta name="keywords" content="responsive" />
+        <!-- zadej jmeno autora -->
+        <meta name="author" content="Miroslav Viktorin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- aktivace fontawesome -->
+        <!-- <link rel="stylesheet" href="./assets/css/fontawesome.min.css"> -->
+        <!-- <link rel="stylesheet" href="./assets/css/brands.min.css"> -->
+        <!-- <link rel="stylesheet" href="./assets/css/solid.min.css"> -->
+
+        <link rel="stylesheet" href="css/home.css" />
+        <!-- <link
+            rel="shortcut icon"
+            href="./favicon-32x32.png"
+            type="image/x-icon"
+        /> -->
+        <link
+            rel="shortcut icon"
+            href="./favicon-32x32.webp"
+            type="image/x-icon"
+        />
+        <!-- preload img for java -->
+        <!-- <link rel="preload" href="hero.jpg" as="image" fetchpriority="high"> -->
+    </head>
+
+    <body class="home">
+        <main class="container">
+            <div class="card">
+                <picture class="card__picture">
+                    <source
+                        media="(max-width: 650px)"
+                        type="image/webp"
+                        width="343"
+                        height="240"
+                        sizes="(min-width:343px) 343px, 100vw"
+                        srcset="
+                            ./assets/img/mobile-343.webp 343w,
+                            ./assets/img/mobile-686.webp 686w
+                        "
+                    />
+                    <img
+                        src="./assets/img/desktop-300.webp"
+                        width="300"
+                        height="450"
+                        sizes="(min-width:650px) 300px, 50vw"
+                        srcset="
+                            ./assets/img/desktop-300.webp 300w,
+                            ./assets/img/desktop-600.webp 600w
+                        "
+                        decoding="async"
+                        loading="eager"
+                        title="parfum bottle"
+                        alt="parfum bottle"
+                    />
+                </picture>
+
+                <section class="card__content">
+                    <h2>PERFUME</h2>
+                    <h1>Gabrielle Essence Eau De Parfum</h1>
+                    <p>
+                        A floral, solar and voluptuous interpretation composed
+                        by Olivier Polge, Perfumer-Creator for the House of
+                        CHANEL.
+                    </p>
+                    <div class="price">
+                        <p class="price--new">$149.99</p>
+                        <p class="price--old">$169.99</p>
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/img/icon-cart.svg" alt="cart" />
+                        <p>Add to Cart</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
