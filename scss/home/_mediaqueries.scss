@@ -11,5 +11,14 @@
 //         --heading-L: #{$heading__L--Max};
 //     }
 
-
 // }
+
+@include mQmni {
+    .container {
+        padding-block: em(30, 14.4) em(30, 14.4);
+        padding-inline: em(0, 14.4);
+    }
+    header {
+        padding-inline: em(10, 14.4);
+    }
+}
