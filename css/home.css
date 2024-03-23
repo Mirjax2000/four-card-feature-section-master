@@ -310,7 +310,6 @@ img {
 .home {
   font-optical-sizing: auto;
   background-color: #fafafa;
-  height: 100dvh;
   font-family: Poppins, sans-serif;
 }
 
@@ -350,24 +349,24 @@ header p {
   opacity: 0.5;
 }
 
-.grid .supervisor {
-  border-top: 0.3472222222em solid #44d3d2;
-}
-.grid .calculator {
-  border-top: 0.3472222222em solid #549ef2;
-}
-.grid .teamBuilder {
-  border-top: 0.3472222222em solid #ea5454;
-}
-.grid .karma {
-  border-top: 0.3472222222em solid #fcae4a;
-}
 .grid .card {
   text-align: right;
   -webkit-box-shadow: 0 1.0416666667em 2.0833333333em -0.7638888889em rgba(131, 166, 210, 0.5019607843);
           box-shadow: 0 1.0416666667em 2.0833333333em -0.7638888889em rgba(131, 166, 210, 0.5019607843);
   border-radius: 0.5555555556em;
   margin-bottom: 1.7361111111em;
+}
+.grid .card.supervisor {
+  border-top: 0.3472222222em solid #44d3d2;
+}
+.grid .card.calculator {
+  border-top: 0.3472222222em solid #549ef2;
+}
+.grid .card.teamBuilder {
+  border-top: 0.3472222222em solid #ea5454;
+}
+.grid .card.karma {
+  border-top: 0.3472222222em solid #fcae4a;
 }
 .grid .card .card__container {
   padding: 1.9444444444em;
@@ -388,6 +387,7 @@ header p {
   letter-spacing: 0.0076923077em;
   color: #4d4f62;
   opacity: 0.5;
+  margin-bottom: 2.5384615385em;
 }
 .grid .card img {
   background-color: #fafafa;
@@ -396,6 +396,53 @@ header p {
 }
 
 /* mediaqueries */
+@media only screen and (min-width: 900px) {
+  :root {
+    --font-size: 100%;
+    --H1: 2.25rem;
+    --H2: 2.25rem;
+    --H3: 1.25rem;
+    --header-par: 0.9375rem;
+    --card-par: 0.8125rem;
+  }
+  header {
+    max-width: 33.75em;
+    margin-inline: auto;
+    margin-bottom: 4em;
+  }
+  .container {
+    max-width: 90em;
+    margin-inline: auto;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0em;
+  }
+  .grid .card {
+    max-width: 21.875em;
+    min-height: 15.625em;
+  }
+  .grid .middle {
+    padding-inline: 1.875em;
+  }
+  .grid .middle .card img {
+    max-width: 4em;
+  }
+}
 @media only screen and (max-width: 250px) {
   .container {
     padding-block: 2.0833333333em 2.0833333333em;

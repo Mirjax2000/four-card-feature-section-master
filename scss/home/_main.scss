@@ -8,7 +8,7 @@
 .home {
     font-optical-sizing: auto;
     background-color: $clr-bg-body;
-    height: 100dvh;
+    // height: 100dvh;
     // @include flexCenter;
     font-family: $font-family-Poppins;
 }
@@ -53,19 +53,20 @@ header {
 }
 
 .grid {
-    @each $name, $color in $cards-color {
-        .#{$name} {
-            border-top: em(5, 14.4) solid $color;
-        }
-    }
+    
     .card {
-        
+        @each $name, $color in $cards-color {
+            &.#{$name} {
+                border-top: em(5, 14.4) solid $color;
+            }
+        }
+
         .card__container {
             padding: em(28, 14.4);
         }
 
         text-align: right;
-        box-shadow: 0 em(15, 14.4) em(30, 14.4) em(-11, 14.4) $shadow-clr;
+        box-shadow: 0 em(15, 14.4) em(30, 14.4) em(-11, 14.4) $clr-shdw;
 
         border-radius: em($br-card--mobile, 14.4);
         margin-bottom: em(25, 14.4);
@@ -88,6 +89,7 @@ header {
             letter-spacing: em(0.1, 13);
             color: $clr-txt-card-par;
             opacity: 0.5;
+            margin-bottom: em(33, 13);
         }
 
         img {

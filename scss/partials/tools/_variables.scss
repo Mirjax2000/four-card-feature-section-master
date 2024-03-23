@@ -83,17 +83,13 @@ $br-card--desktop: 6;
 $br-btn: 8;
 // ----------------------
 
-//shagow colors
-$shadow-clr: $clr18;
-// ----------------------
-
 // border color
 $clr-br: $clr13;
 $clr-br-list: $clr13;
 // ----------------------
 
 // shadow color
-$clr-shd: $clr13;
+$clr-shdw: $clr18;
 // ----------------------
 
 // transition
@@ -101,10 +97,10 @@ $tr-time: 0.2s;
 //----------------------
 
 // --- break points ---
-$width-Max: 650px;
-$width-Mid: 650px;
-$width-Min: 650px;
-$width-Mni: 250px;
+$bp-Max: 900px;
+$bp-Mid: 650px;
+$bp-Min: 650px;
+$bp-Mni: 250px;
 // -------------------------------
 
 // --- font-sizes ---
@@ -118,15 +114,15 @@ $H1--Max: rem(36, 0); //32
 $H1--Mid: rem(24, 10); //24
 
 // H2
-$H2--Max: rem(12, 0); //12
+$H2--Max: rem(36, 0); //36
 $H2--Mid: rem(24, 10); //20
 
 // H3
-$H3--Max: rem(14, 0); //14
+$H3--Max: rem(20, 0); //20
 $H3--Mid: rem(20, 10); //20
 
 // Header-par
-$header-par--Max: rem(32, 0); //32
+$header-par--Max: rem(15, 0); //15
 $header-par--Mid: rem(15, 10); //15
 
 // Card-par
