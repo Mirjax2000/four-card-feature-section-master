@@ -1,6 +1,6 @@
 # Frontend Mentor - Product card
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Four-card-feature](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -48,42 +48,16 @@ i saved lots of kilobytes. And it has some role in SEO evaluation.
 -   Semantic HTML5 markup
 -   Picture resolutin
 -   CSS custom properties - BEM naming convention
+-   Sass - nesting, variables, mixins, functions, \_partials files.
 -   Flexbox
 -   Mobile-first workflow
 
 ### What I learned
 
-<p>"Art direction" and "Resolution switching"</p>
+<p>"Flex box"</p>
 
 ```html
-<picture>
-    <source
-        media="(max-width: 650px)"
-        type="image/webp"
-        width="343"
-        height="240"
-        sizes="(min-width:343px) 343px, 100vw"
-        src="(max-width:343px)"
-        srcset="
-            ./assets/img/mobile-343-test.webp 343w,
-            ./assets/img/mobile-686-test.webp 686w
-        "
-    />
-    <img
-        src="./assets/img/mobile-343-test.webp"
-        width="300"
-        height="450"
-        sizes="(min-width:650px) 300px, 50vw"
-        srcset="
-            ./assets/img/desktop-300-test.webp 300w,
-            ./assets/img/desktop-600-test.webp 600w
-        "
-        decoding="async"
-        loading="eager"
-        title="parfum bottle"
-        alt="parfum bottle"
-    />
-</picture>
+
 ```
 
 Here i am self-hosting fonts compressed it to woff2,
@@ -104,6 +78,6 @@ Practise, practise, practise.
 -   Website - [Mirjax Vigokiller](https://github.com/Mirjax2000)
 -   Frontend Mentor - [@Mirjax2000](https://www.frontendmentor.io/profile/Mirjax2000)
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
-I received big help, lots of motivativation and many new usefull tips and tricks from this user [@stevexero](https://www.frontendmentor.io/profile/stevexero), He doesnt know that but i am watching his challenges and learnig from him.
+I received big help, lots of motivativation and many new usefull tips and tricks from this user [@stevexero](https://www.frontendmentor.io/profile/stevexero), He doesnt know that but i am watching his challenges and learnig from him. -->
